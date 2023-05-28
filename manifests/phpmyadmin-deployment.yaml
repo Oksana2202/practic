@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     kompose.cmd: kompose convert -f docker-compose.yaml
-    kompose.version: 1.26.1 (a9d05d509)
+    kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
     io.kompose.service: phpmyadmin
@@ -18,7 +18,7 @@ spec:
     metadata:
       annotations:
         kompose.cmd: kompose convert -f docker-compose.yaml
-        kompose.version: 1.26.1 (a9d05d509)
+        kompose.version: 1.26.0 (40646f47)
       creationTimestamp: null
       labels:
         io.kompose.service: phpmyadmin
@@ -28,7 +28,7 @@ spec:
             - name: PMA_HOST
               value: db
             - name: PMA_PASSWORD
-              value: secret
+              value: "1"
             - name: PMA_USER
               value: root
           image: phpmyadmin/phpmyadmin:5.0.1
